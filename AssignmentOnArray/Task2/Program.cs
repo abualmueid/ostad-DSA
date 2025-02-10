@@ -1,5 +1,5 @@
-﻿//int[] nums = { 3, 6, 9, 1 };
-int[] nums = { 10 };
+﻿int[] nums = { 3, 6, 9, 1 };
+//int[] nums = { 10 };
 
 Console.WriteLine(MaxGap(nums));
 
