@@ -18,6 +18,8 @@ bool IsPowerOfFive(int n)
 }
 
 Console.WriteLine(IsPowerOfFive(n));
+
+// Time Complexity: O(log5(n))
 */
 #endregion
 
@@ -37,5 +39,7 @@ bool IsPowerOfFive(int n, int x = 0)
 }
 
 Console.WriteLine(IsPowerOfFive(n));
+
+// Time Complexity: O(log5(n))
 
 #endregion
