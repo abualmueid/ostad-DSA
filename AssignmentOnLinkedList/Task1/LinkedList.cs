@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
-    public class LinkedListConverter
+    public class LinkedList
     {
         public ListNode IntegerToDoublyLinkedList(int n)
         {
