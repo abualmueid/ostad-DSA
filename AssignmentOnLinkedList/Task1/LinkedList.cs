@@ -29,9 +29,7 @@ namespace Task1
         {
             for (ListNode current = head; current != null; current = current.next)
             {
-                Console.Write(current.value);
-                if (current.next != null)
-                    Console.Write(" <-> ");
+                Console.Write(current.value + (current.next != null ? " <-> " : ""));
             }
         }
 
