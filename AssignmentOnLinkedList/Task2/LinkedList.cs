@@ -37,24 +37,22 @@ namespace Task2
         {
             var set = new HashSet<int>(array);
 
-            for (ListNode current = head, prev = null; current != null; current = current.next)
+            ListNode current = head;
+            while (current != null)
             {
                 if (set.Contains(current.value))
                 {
-                    if (prev != null) // more than one nodes
+                    if (current == head) // deletion in the beginning
                     {
-                        prev.next = current.next;
+                        head = head.next;
                     }
-                    else // only one node
+                    else // deletion in the middle or end
                     {
-                        head = current.next;
+                        current.next = current.next.next;
                     }
                 }
-                prev = current;
-                //else
-                //{
-                //    prev = current;
-                //}
+
+                current = current.next;
             }
 
             return head;

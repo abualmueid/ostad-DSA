@@ -15,14 +15,16 @@ int l = int.Parse(Console.ReadLine());
 int[] linkedList = new int[l];
 Console.Write("Enter elements of the linked list: ");
 string[] listElements = Console.ReadLine().Split(' ');
-for (int i = 0; i < n; i++)
+for (int i = 0; i < listElements.Length; i++)
 {
     linkedList[i] = int.Parse(listElements[i]);
 }
 
 var ll = new LinkedList();
 ListNode head = ll.CreateLinkedList(linkedList);
+Console.Write("\nOriginal list: ");
 ll.DisplayList(head);
 head = ll.RemoveElements(head, array);
+Console.Write("List after deletion: ");
 ll.DisplayList(head);
 
