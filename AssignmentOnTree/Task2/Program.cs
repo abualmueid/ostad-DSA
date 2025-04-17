@@ -1,12 +1,14 @@
 ﻿int n = int.Parse(Console.ReadLine());
 int[] parent = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
+// Initialize the tree
 var tree = new List<int>[n];
 for (int i = 0; i < n; i++)
 {
     tree[i] = new List<int>();
 }
 
+// Build the tree
 int root = -1;
 for (int i = 0; i < n; i++)
 {
@@ -20,6 +22,7 @@ for (int i = 0; i < n; i++)
     }
 }
 
+// Calculate height
 int height = GetHeight(root);
 Console.WriteLine(height);
 
